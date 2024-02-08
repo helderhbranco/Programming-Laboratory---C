@@ -1,0 +1,186 @@
+\hypertarget{funcionarios_8c}{}\doxysection{funcionarios.\+c File Reference}
+\label{funcionarios_8c}\index{funcionarios.c@{funcionarios.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}func.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{funcionarios_8c_a45666266b1a7332ec77776597171228b}{imprimir\+Func}} (\mbox{\hyperlink{struct_func}{Func}} funcionario)
+\item 
+int \mbox{\hyperlink{funcionarios_8c_a4c8dff0958aa27bd3a9440f78b7d0b1e}{procurar\+Func}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} funcionarios, char nome\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{funcionarios_8c_a1616a181c431331fb45b444ebeaf9bd6}{editar\+Funcionario}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$funcionario)
+\item 
+void \mbox{\hyperlink{funcionarios_8c_a93e7b3ad9eb63cbbf32c2692fe74f746}{carregar\+Funcionarios}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$funcionarios, char $\ast$ficheiro)
+\item 
+void \mbox{\hyperlink{funcionarios_8c_adabdbad23728b0f47a18a2587a30f127}{guardar\+Funcionarios}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$funcionarios, char $\ast$ficheiro)
+\item 
+void \mbox{\hyperlink{funcionarios_8c_a6a779e83a5d26158a0a7442e93dc1a66}{libertar\+Funcionarios}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$funcionarios)
+\item 
+int \mbox{\hyperlink{funcionarios_8c_a1b04b18ddc1d6f5a0d59847f4df42ff8}{inserir\+Func}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$funcionario)
+\item 
+void \mbox{\hyperlink{funcionarios_8c_a6efc5263f77c39dd2e7853bd200be3e8}{expandir\+Funcionarios}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$funcionario)
+\item 
+void \mbox{\hyperlink{funcionarios_8c_af49361b13d95c83bd81d01bf5015284b}{inserir\+Funcionarios}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$funcionario)
+\item 
+void \mbox{\hyperlink{funcionarios_8c_a7590747f58a21e6c945c34b73f69d80b}{procurar\+Funcionarios}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} funcionario)
+\item 
+void \mbox{\hyperlink{funcionarios_8c_a72ee910683a41781132cba3167a01e89}{remover\+Funcionarios}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$funcionario)
+\item 
+void \mbox{\hyperlink{funcionarios_8c_a08f14afa294f129b7667c3101790b1d4}{listar\+Funcionarios}} (\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} funcionario)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{funcionarios_8c_a93e7b3ad9eb63cbbf32c2692fe74f746}\label{funcionarios_8c_a93e7b3ad9eb63cbbf32c2692fe74f746}} 
+\index{funcionarios.c@{funcionarios.c}!carregarFuncionarios@{carregarFuncionarios}}
+\index{carregarFuncionarios@{carregarFuncionarios}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{carregarFuncionarios()}{carregarFuncionarios()}}
+{\footnotesize\ttfamily void carregar\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$}]{funcionarios,  }\item[{char $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+Funçao carregar\+Funcionairos 
+\begin{DoxyParams}{Parameters}
+{\em funcionarios} & Apontador para a estrutura \mbox{\hyperlink{struct_funcionarios}{Funcionarios}} \\
+\hline
+{\em ficheiro} & Apontador para o ficheiro onde estao guardados os funcionarios e carregamos os de novo para o programa \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionarios_8c_a1616a181c431331fb45b444ebeaf9bd6}\label{funcionarios_8c_a1616a181c431331fb45b444ebeaf9bd6}} 
+\index{funcionarios.c@{funcionarios.c}!editarFuncionario@{editarFuncionario}}
+\index{editarFuncionario@{editarFuncionario}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{editarFuncionario()}{editarFuncionario()}}
+{\footnotesize\ttfamily void editar\+Funcionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$}]{funcionario }\end{DoxyParamCaption})}
+
+Funçao editar\+Funcionario 
+\begin{DoxyParams}{Parameters}
+{\em funcionario} & Apontador para a estrutura \mbox{\hyperlink{struct_func}{Func}} \\
+\hline
+\end{DoxyParams}
+Insere o nome do funcionario que quer eitar se este existir (i$\vert$=-\/1), pode alterar os dados,nome e codigo\mbox{\Hypertarget{funcionarios_8c_a6efc5263f77c39dd2e7853bd200be3e8}\label{funcionarios_8c_a6efc5263f77c39dd2e7853bd200be3e8}} 
+\index{funcionarios.c@{funcionarios.c}!expandirFuncionarios@{expandirFuncionarios}}
+\index{expandirFuncionarios@{expandirFuncionarios}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{expandirFuncionarios()}{expandirFuncionarios()}}
+{\footnotesize\ttfamily void expandir\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$}]{funcionario }\end{DoxyParamCaption})}
+
+Funçao expandir\+Funcionarios 
+\begin{DoxyParams}{Parameters}
+{\em funcionario} & Apontador para a estrutura \mbox{\hyperlink{struct_func}{Func}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionarios_8c_adabdbad23728b0f47a18a2587a30f127}\label{funcionarios_8c_adabdbad23728b0f47a18a2587a30f127}} 
+\index{funcionarios.c@{funcionarios.c}!guardarFuncionarios@{guardarFuncionarios}}
+\index{guardarFuncionarios@{guardarFuncionarios}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{guardarFuncionarios()}{guardarFuncionarios()}}
+{\footnotesize\ttfamily void guardar\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$}]{funcionarios,  }\item[{char $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+Funçao guardar\+Funcionairos 
+\begin{DoxyParams}{Parameters}
+{\em funcionarios} & Apontador para a estrutura \mbox{\hyperlink{struct_func}{Func}} \\
+\hline
+{\em ficheiro} & Apontador pra o Ficheiro onde vai guardar os funcionarios \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionarios_8c_a45666266b1a7332ec77776597171228b}\label{funcionarios_8c_a45666266b1a7332ec77776597171228b}} 
+\index{funcionarios.c@{funcionarios.c}!imprimirFunc@{imprimirFunc}}
+\index{imprimirFunc@{imprimirFunc}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{imprimirFunc()}{imprimirFunc()}}
+{\footnotesize\ttfamily void imprimir\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_func}{Func}}}]{funcionario }\end{DoxyParamCaption})}
+
+Funçao imprimir\+Func 
+\begin{DoxyParams}{Parameters}
+{\em funcionario} & imprime os dados de um determinado funcionario \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionarios_8c_a1b04b18ddc1d6f5a0d59847f4df42ff8}\label{funcionarios_8c_a1b04b18ddc1d6f5a0d59847f4df42ff8}} 
+\index{funcionarios.c@{funcionarios.c}!inserirFunc@{inserirFunc}}
+\index{inserirFunc@{inserirFunc}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{inserirFunc()}{inserirFunc()}}
+{\footnotesize\ttfamily int inserir\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$}]{funcionario }\end{DoxyParamCaption})}
+
+Funçao inserir\+Func 
+\begin{DoxyParams}{Parameters}
+{\em funcionario} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 se nao existir o funcionario, se nao Já existe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcionarios_8c_af49361b13d95c83bd81d01bf5015284b}\label{funcionarios_8c_af49361b13d95c83bd81d01bf5015284b}} 
+\index{funcionarios.c@{funcionarios.c}!inserirFuncionarios@{inserirFuncionarios}}
+\index{inserirFuncionarios@{inserirFuncionarios}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{inserirFuncionarios()}{inserirFuncionarios()}}
+{\footnotesize\ttfamily void inserir\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$}]{funcionario }\end{DoxyParamCaption})}
+
+Funçao inserir\+Funcionarios 
+\begin{DoxyParams}{Parameters}
+{\em funcionario} & Apontaodor para a estrutura \mbox{\hyperlink{struct_func}{Func}} \\
+\hline
+\end{DoxyParams}
+Aumenta onumero maximo de funcionarios possiveis se o contador for igual ao tamanho
+
+Se o contador for menor que o tamanho e se a funçao inserir\+Func retornar -\/1 o funcionario jà existe, se nao é impossível inserir novo funcionário\mbox{\Hypertarget{funcionarios_8c_a6a779e83a5d26158a0a7442e93dc1a66}\label{funcionarios_8c_a6a779e83a5d26158a0a7442e93dc1a66}} 
+\index{funcionarios.c@{funcionarios.c}!libertarFuncionarios@{libertarFuncionarios}}
+\index{libertarFuncionarios@{libertarFuncionarios}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{libertarFuncionarios()}{libertarFuncionarios()}}
+{\footnotesize\ttfamily void libertar\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$}]{funcionarios }\end{DoxyParamCaption})}
+
+Funçao libertar\+Funcionarios 
+\begin{DoxyParams}{Parameters}
+{\em funcionarios} & Apontador para a estrutura \mbox{\hyperlink{struct_func}{Func}} Liberta memoria \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionarios_8c_a08f14afa294f129b7667c3101790b1d4}\label{funcionarios_8c_a08f14afa294f129b7667c3101790b1d4}} 
+\index{funcionarios.c@{funcionarios.c}!listarFuncionarios@{listarFuncionarios}}
+\index{listarFuncionarios@{listarFuncionarios}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{listarFuncionarios()}{listarFuncionarios()}}
+{\footnotesize\ttfamily void listar\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}}}]{funcionario }\end{DoxyParamCaption})}
+
+Funçao listar\+Funcionarios 
+\begin{DoxyParams}{Parameters}
+{\em funcionario} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionarios_8c_a4c8dff0958aa27bd3a9440f78b7d0b1e}\label{funcionarios_8c_a4c8dff0958aa27bd3a9440f78b7d0b1e}} 
+\index{funcionarios.c@{funcionarios.c}!procurarFunc@{procurarFunc}}
+\index{procurarFunc@{procurarFunc}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{procurarFunc()}{procurarFunc()}}
+{\footnotesize\ttfamily int procurar\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}}}]{funcionarios,  }\item[{char}]{nome\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Função procurar\+Func 
+\begin{DoxyParams}{Parameters}
+{\em funcionarios} & \\
+\hline
+{\em nome} & Nome do funcionario \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 -\/ O funcionario não existe, i-\/funcionario existe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcionarios_8c_a7590747f58a21e6c945c34b73f69d80b}\label{funcionarios_8c_a7590747f58a21e6c945c34b73f69d80b}} 
+\index{funcionarios.c@{funcionarios.c}!procurarFuncionarios@{procurarFuncionarios}}
+\index{procurarFuncionarios@{procurarFuncionarios}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{procurarFuncionarios()}{procurarFuncionarios()}}
+{\footnotesize\ttfamily void procurar\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}}}]{funcionario }\end{DoxyParamCaption})}
+
+Funçao procurar\+Funcionarios 
+\begin{DoxyParams}{Parameters}
+{\em funcionario} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionarios_8c_a72ee910683a41781132cba3167a01e89}\label{funcionarios_8c_a72ee910683a41781132cba3167a01e89}} 
+\index{funcionarios.c@{funcionarios.c}!removerFuncionarios@{removerFuncionarios}}
+\index{removerFuncionarios@{removerFuncionarios}!funcionarios.c@{funcionarios.c}}
+\doxysubsubsection{\texorpdfstring{removerFuncionarios()}{removerFuncionarios()}}
+{\footnotesize\ttfamily void remover\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionarios}{Funcionarios}} $\ast$}]{funcionario }\end{DoxyParamCaption})}
+
+Funçao remover\+Funcionarios 
+\begin{DoxyParams}{Parameters}
+{\em funcionario} & Apontador para a estrutura \mbox{\hyperlink{struct_func}{Func}} \\
+\hline
+\end{DoxyParams}
+Posiçao do funcionario
+
+Altera o estado do funcionario de 1 para 0 (removido)

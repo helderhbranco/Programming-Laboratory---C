@@ -18,3 +18,26 @@ O projeto consiste em um programa em C para registrar o trabalho realizado pelos
 
 ---
 Este documento é parte do projeto desenvolvido como parte da Avaliação Final de Recurso da disciplina de Laboratórios de Programação do ano letivo 2020/2021.
+
+
+# Employee Work Management System
+
+This repository contains the project developed as part of the Final Evaluation of the Programming Laboratories course. The project aimed to create an employee work management system, as provided in the assignment.
+
+## Project Description
+
+The project consists of a C program to record the work performed by employees of a company and generate a summary file for salary processing and association with ongoing projects in the company. The main functionalities include:
+
+- Employee management: creation, editing, and removal of employees, associated with projects.
+- Work registration: recording of workdays (half-day, full-day) or absences, associating them with projects.
+- Summary export: exporting a summary of workdays to a text file.
+
+## Implemented Functionalities
+
+- Employee management: implemented using suitable data structures and file manipulation for data persistence.
+- Work registration: allowing the registration of workdays and absences of employees, associated with projects.
+- Summary export: generating a text file with the summary of workdays for the specified month by the user.
+
+---
+
+This document is part of the project developed as part of the Final Evaluation of the Programming Laboratories course for the academic year 2020/2021.
